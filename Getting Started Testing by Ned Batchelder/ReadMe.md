@@ -8,7 +8,7 @@ This talk is about basic unit test concept.
 - Second : Add UnitTest Class(Page 20)
     - Command : `python -m unittest test_port1`
     - First Test Case by UnitTest
-
+- Third : Add Two Test Case.
 
 ## Resouce
 
