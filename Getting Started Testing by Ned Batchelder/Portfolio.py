@@ -11,12 +11,12 @@ class Portfolio(object):
             amt += share * price
         return amt
 
-if __name__ == '__main__':
-    p = Portfolio()
-    assert(p.cost() == 0)
-
-    p.buy("IBM", 100, 176.48)
-    assert(p.cost() == 17648.0)
-
-    p.buy("HPQ", 100, 36.15)
-    assert(p.cost() == 21263.0)
+    def sell(self, name, shares):
+        for holding in self.stocks:
+            if holding[0] == name:
+                if holding[1] < shares:
+                    raise ValueError("No enought shares")
+                holding[1] -= shares
+                break
+        else:
+            raise ValueError("You don't own that stock")

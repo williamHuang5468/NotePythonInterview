@@ -29,3 +29,23 @@ class PortfolioTest(unittest.TestCase):
         p = Portfolio()
         with self.assertRaises(TypeError):
             p.buy(p.cost())
+
+
+class PortfolioSellTest(unittest.TestCase):
+    def setUp(self):
+        self.p = Portfolio()
+        self.p.buy("MSFT", 100, 27.0)
+        self.p.buy("DELL", 100, 17.0)
+        self.p.buy("ORCL", 100, 34.0)
+
+    def test_sell(self):
+        self.p.sell("MSFT", 50)
+        self.assertEqual(self.p.cost(), 6450)
+
+    def test_not_enought(self):
+        with self.assertRaises(ValueError):
+            self.p.sell("MSFT", 200)
+
+    def test_dont_own_it(self):
+        with self.assertRaises(ValueError):
+            self.p.sell("IBM", 1)
