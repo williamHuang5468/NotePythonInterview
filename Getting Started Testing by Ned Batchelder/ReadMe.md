@@ -9,6 +9,8 @@ This talk is about basic unit test concept.
     - Command : `python -m unittest test_port1`
     - First Test Case by UnitTest
 - Third : Add Two Test Case.
+- Fouth : Using `self.assertEqual` replace `assert`
+    - Add Test case that is `Test_assert_exception`.
 
 ## Resouce
 
