@@ -1,2 +1,3 @@
-# NotePythonInterview
-Practice topic from python-interview
+# Python Practice
+
+Read the video talk , and practice the code.
