@@ -1,8 +1,9 @@
-# A template engine
+# [A template engine](http://aosabook.org/en/500L/a-template-engine.html)
 
-- [ ][Introduction]
-- [ ][Templates]
-- [ ][Supported Syntax]
+- [ ] [Introduction]()
+- [ ] [Templates]()
+- [ ] [Supported Syntax]()
+
 ## Introduction
 
 Most programs contain a lot of logic, and a little bit of literal textual data. Programming languages are designed to be good for this sort of programming. But some programming tasks involve only a little bit of logic, and a great deal of textual data. For these tasks, we'd like to have a tool better suited to these text-heavy problems. A template engine is such a tool. In this chapter, we build a simple template engine.
