@@ -95,3 +95,11 @@ We present the example in three stages.
     we use the full-featured coroutines (from Python's standard "asyncio" library1, and coordinate them using an async queue).
 
     we use the full-featured coroutines.
+
+## Related information
+
+- [Guido introduced the standard asyncio library, called "Tulip" then, at PyCon 2013]
+- [The C10K problem](http://www.kegel.com/c10k.html)
+- [Jesse listed indications and contraindications for using async](http://pyvideo.org/video/2565/what-is-async-how-does-it-work-and-when-should)
+- [Mike Bayer compared the throughput of asyncio and multithreading for different workloads](http://techspot.zzzeek.org/2015/02/15/asynchronous-python-and-databases/)
+- [complex solution](http://www.tornadoweb.org/en/stable/stack_context.html)

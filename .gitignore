@@ -87,3 +87,4 @@ ENV/
 
 # Rope project settings
 .ropeproject
+/500 Lines or Less/*.swp
