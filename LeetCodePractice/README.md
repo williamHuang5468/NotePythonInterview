@@ -1,6 +1,31 @@
 # Notes
 
 - [x] 344
+- [x] 278
+
+## 278. First Bad Version
+
+找出最早的錯誤版本
+
+官方提供一個 API : isBadVersion() 幫助你找到有問題的版本
+
+一開始使用最簡單的暴力破解，從尾巴掃到頭，最早的正確的前一個版本。
+
+```Python
+
+for i in range(n , -1, -1):
+	if not isBadVersion(i):
+		return i+1
+```
+
+但是拿到結果
+
+- Runtime Error Message: Line 23: MemoryError
+- Last executed input: 2126753390 versions, 1702766719 is the first bad version.
+
+數字太大，不能這樣玩。
+
+那就改用 Binary Search。
 
 ## 344. Reverse String
 
